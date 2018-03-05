@@ -1,0 +1,9 @@
+import tensorflow as tf
+import numpy as np
+a = [1,2,3,4,5,6,7,8,9]
+
+with tf.Session as sess:
+    b = sess.run(tf.reshape(a, [3, 3]))
+    print(b.shape())
+	
+想输出b改变形状后的维度信息
